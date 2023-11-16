@@ -63,3 +63,21 @@ public class HeapSort {
         System.out.print("Ingrese la cantidad de elementos en el arreglo: ");
         int n = scanner.nextInt();
 
+        int arr[] = new int[n];
+
+        System.out.println("Ingrese los elementos del arreglo:");
+        for (int i = 0; i < n; i++) {
+            arr[i] = scanner.nextInt();
+        }
+
+        System.out.println("Arreglo original:");
+        printArray(arr);
+
+        sort(arr);
+
+        System.out.println("Arreglo ordenado:");
+        printArray(arr);
+
+        scanner.close();
+    }
+}
